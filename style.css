@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500&display=swap");
-/* POPPINS */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap");
 
 /*! must before all */
@@ -11,14 +9,19 @@
   color: #001833;
 }
 
-li {
-  list-style: none;
-}
-
 body {
   font-family: "Poppins", sans-serif;
   background-color: #bbcae0;
   overflow-y: scroll;
+}
+
+li {
+  list-style: none;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .main {
@@ -26,6 +29,12 @@ body {
   max-width: 500px;
   margin: 0 auto;
   padding: 2rem;
+}
+
+.question {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem;
 }
 
 .answer {
@@ -40,18 +49,6 @@ body {
   max-height: 0;
 }
 
-.question {
-  display: flex;
-  justify-content: space-between;
-  margin: 1rem;
-}
-
-.container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
 button {
   background: transparent;
   border: none;
@@ -59,18 +56,3 @@ button {
   cursor: pointer;
   padding: 0.5rem;
 }
-
-/* @media (max-width: 500px) {
-  .startBtn,
-  .stopBtn,
-  .resetBtn {
-    padding: 0.5rem 1.5rem;
-    font-weight: bold;
-    font-family: "Poppins", sans-serif;
-  }
-
-  .timer {
-    font-size: 3rem;
-    text-align: center;
-  }
-} */
